@@ -505,6 +505,10 @@ form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .editors-picks-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
@@ -610,6 +614,12 @@ form {
 .section-reel-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+}
+
+.editors-picks-main-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
 }
 }
 
