@@ -86,7 +86,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-gap: 30px;
-  padding-top: 100px;
+  padding-top: 30px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -112,6 +112,7 @@ a {
 img {
     width: 100%;
 }
+
 
 .category-tittle {
     width: 100%;
@@ -234,6 +235,11 @@ form {
     background-color: rgba(0,0,0,0.7);
 }
 
+.section1:hover:before {
+   
+    background-color: rgba(0,0,0,0.5);
+}
+
 .section1-text span {
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -332,6 +338,156 @@ form {
   display: none;
 }
 
+.slider {
+    margin-top: 100px;
+}
+
+.slider div {
+    position: relative;
+}
+
+.slider div span  {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    padding-left: 50px;
+   
+}
+
+.section-reel {
+    background-color: rgb(197, 193, 130);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.section-reel-container {
+    padding: 30px 0px;
+}
+
+.section-reel-tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.reel-tittle-name h2 a {
+    color: #fff;
+}
+
+.reel-tittle-name h2 a:hover {
+    color: rgb(128, 122, 45);
+}
+
+.reel-tittle-name span {
+   padding-right: 30px;
+}
+
+.reel-button input {
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.reel-button input:hover {
+    color: rgb(184, 179, 112);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.section-reel-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 15px;
+}
+
+.reel-item {
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.img-description {
+    padding: 10px;
+}
+
+.img-description a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.img-description a:hover {
+    color: rgb(128, 122, 45);
+}
+
+.editors-picks-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+}
+
+.editors-picks-main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 15px;
+}
+
+.main-item-title a {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-item-title a:hover {
+    color: blueviolet;
+}
+
+.main-item-description, .main-item-title {
+    margin-top: 5px;
+}
+
+.main-item-description a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(97, 93, 93);
+}
+
+.main-item-description a:hover {
+    color: blueviolet;
+}
+
+.picks-main-img {
+    position: relative;
+}
+
+.picks-main-img::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+.picks-main-img h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
 @media (max-width: 992px) {
     .content-container {
         display: grid;
@@ -345,13 +501,16 @@ form {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
     }
+    .section-reel-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
     .main-container {
         display: grid;
         grid-template-columns: 1fr;
-        padding-top: 50px;
         grid-gap: 0px;
       }
     
@@ -442,10 +601,15 @@ form {
       margin:0px 0px 20px 0px;
   }
 
-.section2-container-text {
+    .section2-container-text {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+}
+
+.section-reel-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
 }
 }
 
