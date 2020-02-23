@@ -347,11 +347,11 @@ form {
 .slider-container {
     display: grid;
     grid-template-columns: 29% 71%;
+    margin-top: 30px;
 }
 
 .slider-side {
     background-color: rgba(0, 0, 0, 0.795);
-    margin-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
@@ -401,10 +401,6 @@ form {
 
 .slick-dotted.slick-slider {
      margin-bottom: 0px;
-}
-
-.slider {
-    margin-top: 100px;
 }
 
 .slider div {
@@ -707,6 +703,50 @@ form {
     color: blueviolet;
 }
 
+.filter {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+.filter input {
+    border-radius: 5px;
+    outline: none;
+}
+
+.filter input[type=button] {
+    background-color: #e67e22;
+    border: none;
+    color: #fff;
+}
+
+.filter input[type=button]:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.filter input[type=search]::placeholder {
+    color:#e67e22;
+}
+
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+
+.filter input[type=search] {
+    background-image: url(images/search.png);
+    border: 1px solid #e67e22;
+    padding: 0px 20px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 180px;
+}
+
+
 @media (max-width:1100px) {
     .slider-list li:last-child {
         display: none;
@@ -889,6 +929,34 @@ form {
     grid-template-columns: repeat(1, 1fr);
 }
 
+.filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+}
+
+}
+
+@media (max-width:500px) {
+
+.filter {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+}
+
+.filter input {
+    height: 40px;
+}
+
+.slider2 div span a {
+    font-size: 10px;
+}
+
+.slider2 div span {
+    bottom: 0px;
+    left: 0px;
+    padding: 0px 5px;
+}
 }
 
 @media (max-width:400px) {
@@ -904,6 +972,10 @@ form {
         background-color: rgba(0,0,0,0.7);
         padding: 10px 20px ;
         font-size: 16px;
+    }
+
+    .slider span a {
+        font-size: 14px;
     }
     
 }
