@@ -668,6 +668,7 @@ form {
     font-size: 20px;
 }
 
+
 .science, .politics {
     margin-top: 30px;
 }
@@ -702,7 +703,7 @@ form {
     color: #000;
 }
 
-.science-container div span a:hover, .politics-container div span a:hover, .science a:hover, .politics a:hover  {
+.science-container div span a:hover, .politics-container div span a:hover, .science a:hover, .politics a:hover, .slider2 div span a:hover {
     color: blueviolet;
 }
 
